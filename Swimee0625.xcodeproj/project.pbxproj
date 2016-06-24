@@ -98,8 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				9AB0E0951D1D6C99007D8479 /* AppDelegate.swift */,
-				9AB0E0971D1D6C99007D8479 /* ViewController.swift */,
-				9AB0E0991D1D6C99007D8479 /* Main.storyboard */,
+				9AB0E0C31D1D721F007D8479 /* Models */,
+				9AB0E0C41D1D7227007D8479 /* StoryBoards */,
+				9AB0E0C51D1D7249007D8479 /* Views */,
 				9AB0E09C1D1D6C99007D8479 /* Assets.xcassets */,
 				9AB0E09E1D1D6C99007D8479 /* LaunchScreen.storyboard */,
 				9AB0E0A11D1D6C99007D8479 /* Info.plist */,
@@ -123,6 +124,29 @@
 				9AB0E0B71D1D6C99007D8479 /* Info.plist */,
 			);
 			path = Swimee0625UITests;
+			sourceTree = "<group>";
+		};
+		9AB0E0C31D1D721F007D8479 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9AB0E0C41D1D7227007D8479 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				9AB0E0991D1D6C99007D8479 /* Main.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		9AB0E0C51D1D7249007D8479 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AB0E0971D1D6C99007D8479 /* ViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
