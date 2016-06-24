@@ -22,8 +22,8 @@ final class nameSettingCell: UITableViewCell, UITextFieldDelegate {
         textField.delegate = self
     }
     
-    func configure(name: String) {
-        textField.text = name
+    func set(user: User) {
+        textField.text = user.name
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

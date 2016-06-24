@@ -14,21 +14,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o93-h3-Tua">
-                        <rect key="frame" x="5" y="11" width="45" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="45" id="dXc-lP-XRd"/>
-                            <constraint firstAttribute="height" constant="20" id="xiA-ie-gHE"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMh-BE-IRI">
                         <rect key="frame" x="60" y="0.0" width="535" height="43.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o93-h3-Tua">
+                        <rect key="frame" x="7" y="11" width="45" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="dXc-lP-XRd"/>
+                            <constraint firstAttribute="height" constant="20" id="xiA-ie-gHE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="o93-h3-Tua" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4fY-D3-wZn"/>

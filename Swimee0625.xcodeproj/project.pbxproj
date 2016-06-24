@@ -21,6 +21,7 @@
 		9AB0E0D11D1D773E007D8479 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0E0D01D1D773E007D8479 /* User.swift */; };
 		9AB0E0D41D1D8018007D8479 /* toSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0E0D21D1D8018007D8479 /* toSettingCell.swift */; };
 		9AB0E0D51D1D8018007D8479 /* toSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0E0D31D1D8018007D8479 /* toSettingCell.xib */; };
+		9AB0E0D71D1D8E64007D8479 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0E0D61D1D8E64007D8479 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		9AB0E0D01D1D773E007D8479 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9AB0E0D21D1D8018007D8479 /* toSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toSettingCell.swift; sourceTree = "<group>"; };
 		9AB0E0D31D1D8018007D8479 /* toSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = toSettingCell.xib; sourceTree = "<group>"; };
+		9AB0E0D61D1D8E64007D8479 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +161,6 @@
 		9AB0E0C51D1D7249007D8479 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9AB0E0971D1D6C99007D8479 /* HomeViewController.swift */,
 				9AB0E0CB1D1D754B007D8479 /* Home */,
 				9AB0E0CA1D1D753F007D8479 /* Setting */,
 			);
@@ -169,6 +170,7 @@
 		9AB0E0CA1D1D753F007D8479 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				9AB0E0D61D1D8E64007D8479 /* SettingViewController.swift */,
 				9AB0E0C61D1D72EE007D8479 /* nameSettingCell.swift */,
 				9AB0E0C71D1D72EE007D8479 /* nameSettingCell.xib */,
 			);
@@ -178,6 +180,7 @@
 		9AB0E0CB1D1D754B007D8479 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9AB0E0971D1D6C99007D8479 /* HomeViewController.swift */,
 				9AB0E0CC1D1D75AE007D8479 /* nameCell.swift */,
 				9AB0E0CD1D1D75AE007D8479 /* nameCell.xib */,
 				9AB0E0D21D1D8018007D8479 /* toSettingCell.swift */,
@@ -325,6 +328,7 @@
 				9AB0E0CE1D1D75AE007D8479 /* nameCell.swift in Sources */,
 				9AB0E0D11D1D773E007D8479 /* User.swift in Sources */,
 				9AB0E0C81D1D72EE007D8479 /* nameSettingCell.swift in Sources */,
+				9AB0E0D71D1D8E64007D8479 /* SettingViewController.swift in Sources */,
 				9AB0E0D41D1D8018007D8479 /* toSettingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

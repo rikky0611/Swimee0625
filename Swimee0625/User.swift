@@ -14,4 +14,6 @@ class User {
     init(name: String) {
         self.name = name
     }
+    
+    static var loginUser: User!
 }
