@@ -8,10 +8,14 @@
 
 import UIKit
 
-final class SettingViewController: UIViewController {
+protocol FinishEditingFromSettingVCDelegate: class {
+    func finishEditingFromSettingVC(newText: String)
+}
+
+final class SettingViewController: UIViewController, FinishEditingDelegate {
     @IBOutlet weak var tableView: UITableView!
     private var user: User!
-    private var modifyingUser: User!
+    weak var delegate: FinishEditingFromSettingVCDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +23,6 @@ final class SettingViewController: UIViewController {
         
         //initialize user
         user = User.loginUser
-        modifyingUser = user
         
         //tableViewSetting
         tableView.delegate = self
@@ -31,7 +34,14 @@ final class SettingViewController: UIViewController {
         tableView.layoutMargins = UIEdgeInsetsZero
         tableView.registerNib(UINib(nibName: String(nameSettingCell.self), bundle: nil),
                               forCellReuseIdentifier: "nameSettingCell")
-        
+    }
+    
+    @IBAction func back() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func finishEditing(newText: String) {
+        delegate?.finishEditingFromSettingVC(newText)
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,6 +70,7 @@ extension SettingViewController: UITableViewDelegate,UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let newCell = tableView.dequeueReusableCellWithIdentifier("nameSettingCell", forIndexPath: indexPath) as! nameSettingCell
+            newCell.delegate = self
             newCell.set(user)
             cell = newCell
         default:

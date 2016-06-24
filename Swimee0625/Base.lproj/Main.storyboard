@@ -93,7 +93,13 @@
                             <constraint firstAttribute="trailing" secondItem="FmI-8p-RyY" secondAttribute="trailing" id="x7L-hD-ZGf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Setting" id="9Wb-XN-8iC"/>
+                    <navigationItem key="navigationItem" title="Setting" id="9Wb-XN-8iC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="NVB-LA-ows">
+                            <connections>
+                                <action selector="back" destination="BXI-RZ-VuJ" id="ygd-Kk-uWx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="FmI-8p-RyY" id="U0y-wm-I4W"/>
                     </connections>

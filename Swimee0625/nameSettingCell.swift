@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol FinishEditingDelegate: class {
+    func finishEditing(newText: String)
+}
+
 final class nameSettingCell: UITableViewCell, UITextFieldDelegate {
     
     @IBOutlet private weak var textField: UITextField!
+    weak var delegate: FinishEditingDelegate?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -28,6 +33,7 @@ final class nameSettingCell: UITableViewCell, UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        delegate?.finishEditing(textField.text!)
         return false
     }
 }

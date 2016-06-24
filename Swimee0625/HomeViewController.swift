@@ -39,6 +39,12 @@ final class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let nav = segue.destinationViewController as! UINavigationController
+        let settingViewController = nav.topViewController as! SettingViewController
+        settingViewController.delegate = self
+    }
 
 }
 
@@ -83,10 +89,19 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource {
     }
 }
 
-// MARK: toSettingDelegate
+// MARK: ToSettingDelegate
 
-extension HomeViewController: toSettingDelegate {
+extension HomeViewController: ToSettingDelegate {
     func toSetting() {
         performSegueWithIdentifier("toSetting", sender: self)
+    }
+}
+
+// MARK: FinishEditingDelegate
+
+extension HomeViewController: FinishEditingFromSettingVCDelegate {
+    func finishEditingFromSettingVC(newText: String) {
+        user?.name = newText
+        tableView.reloadData()
     }
 }

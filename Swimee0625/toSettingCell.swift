@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol toSettingDelegate: class {
+protocol ToSettingDelegate: class {
     func toSetting()
 }
 
 final class toSettingCell: UITableViewCell {
-    weak var delegate: toSettingDelegate?
+    weak var delegate: ToSettingDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
