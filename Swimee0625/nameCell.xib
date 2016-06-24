@@ -42,6 +42,9 @@
                     <constraint firstAttribute="trailing" secondItem="NQM-Em-kSL" secondAttribute="trailing" constant="5" id="rlB-eM-Z0L"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="NQM-Em-kSL" id="ZOP-8p-Upl"/>
+            </connections>
             <point key="canvasLocation" x="163" y="403"/>
         </tableViewCell>
     </objects>

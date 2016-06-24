@@ -1,5 +1,5 @@
 //
-//  nameCell.swift
+//  toSettingCell.swift
 //  Swimee0625
 //
 //  Created by 荒川陸 on 2016/06/24.
@@ -8,16 +8,20 @@
 
 import UIKit
 
-final class nameCell: UITableViewCell {
-    @IBOutlet private weak var nameLabel: UILabel!
+protocol toSettingDelegate: class {
+    func toSetting()
+}
+
+final class toSettingCell: UITableViewCell {
+    weak var delegate: toSettingDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    func set(user: User) {
-        nameLabel.text = user.name
+    @IBAction func toNext() {
+        delegate?.toSetting()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

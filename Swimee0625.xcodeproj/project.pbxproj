@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9AB0E0961D1D6C99007D8479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0E0951D1D6C99007D8479 /* AppDelegate.swift */; };
-		9AB0E0981D1D6C99007D8479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0E0971D1D6C99007D8479 /* ViewController.swift */; };
+		9AB0E0981D1D6C99007D8479 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0E0971D1D6C99007D8479 /* HomeViewController.swift */; };
 		9AB0E09B1D1D6C99007D8479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0E0991D1D6C99007D8479 /* Main.storyboard */; };
 		9AB0E09D1D1D6C99007D8479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0E09C1D1D6C99007D8479 /* Assets.xcassets */; };
 		9AB0E0A01D1D6C99007D8479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0E09E1D1D6C99007D8479 /* LaunchScreen.storyboard */; };
@@ -18,6 +18,9 @@
 		9AB0E0C91D1D72EE007D8479 /* nameSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0E0C71D1D72EE007D8479 /* nameSettingCell.xib */; };
 		9AB0E0CE1D1D75AE007D8479 /* nameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0E0CC1D1D75AE007D8479 /* nameCell.swift */; };
 		9AB0E0CF1D1D75AE007D8479 /* nameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0E0CD1D1D75AE007D8479 /* nameCell.xib */; };
+		9AB0E0D11D1D773E007D8479 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0E0D01D1D773E007D8479 /* User.swift */; };
+		9AB0E0D41D1D8018007D8479 /* toSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0E0D21D1D8018007D8479 /* toSettingCell.swift */; };
+		9AB0E0D51D1D8018007D8479 /* toSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB0E0D31D1D8018007D8479 /* toSettingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 /* Begin PBXFileReference section */
 		9AB0E0921D1D6C99007D8479 /* Swimee0625.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swimee0625.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB0E0951D1D6C99007D8479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AB0E0971D1D6C99007D8479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AB0E0971D1D6C99007D8479 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9AB0E09A1D1D6C99007D8479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AB0E09C1D1D6C99007D8479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB0E09F1D1D6C99007D8479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		9AB0E0C71D1D72EE007D8479 /* nameSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nameSettingCell.xib; sourceTree = "<group>"; };
 		9AB0E0CC1D1D75AE007D8479 /* nameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nameCell.swift; sourceTree = "<group>"; };
 		9AB0E0CD1D1D75AE007D8479 /* nameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nameCell.xib; sourceTree = "<group>"; };
+		9AB0E0D01D1D773E007D8479 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9AB0E0D21D1D8018007D8479 /* toSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toSettingCell.swift; sourceTree = "<group>"; };
+		9AB0E0D31D1D8018007D8479 /* toSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = toSettingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 		9AB0E0C31D1D721F007D8479 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9AB0E0D01D1D773E007D8479 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -152,7 +159,7 @@
 		9AB0E0C51D1D7249007D8479 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9AB0E0971D1D6C99007D8479 /* ViewController.swift */,
+				9AB0E0971D1D6C99007D8479 /* HomeViewController.swift */,
 				9AB0E0CB1D1D754B007D8479 /* Home */,
 				9AB0E0CA1D1D753F007D8479 /* Setting */,
 			);
@@ -173,6 +180,8 @@
 			children = (
 				9AB0E0CC1D1D75AE007D8479 /* nameCell.swift */,
 				9AB0E0CD1D1D75AE007D8479 /* nameCell.xib */,
+				9AB0E0D21D1D8018007D8479 /* toSettingCell.swift */,
+				9AB0E0D31D1D8018007D8479 /* toSettingCell.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -286,6 +295,7 @@
 				9AB0E0CF1D1D75AE007D8479 /* nameCell.xib in Resources */,
 				9AB0E0C91D1D72EE007D8479 /* nameSettingCell.xib in Resources */,
 				9AB0E09B1D1D6C99007D8479 /* Main.storyboard in Resources */,
+				9AB0E0D51D1D8018007D8479 /* toSettingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,10 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB0E0981D1D6C99007D8479 /* ViewController.swift in Sources */,
+				9AB0E0981D1D6C99007D8479 /* HomeViewController.swift in Sources */,
 				9AB0E0961D1D6C99007D8479 /* AppDelegate.swift in Sources */,
 				9AB0E0CE1D1D75AE007D8479 /* nameCell.swift in Sources */,
+				9AB0E0D11D1D773E007D8479 /* User.swift in Sources */,
 				9AB0E0C81D1D72EE007D8479 /* nameSettingCell.swift in Sources */,
+				9AB0E0D41D1D8018007D8479 /* toSettingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
